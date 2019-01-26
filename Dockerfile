@@ -1,9 +1,8 @@
-FROM ubuntu
+FROM python
 
-MAINTAINER Vishnu "https://github.com/vishnuhd/"
+MAINTAINER Vishnu Dadhich "https://github.com/vishnuhd/"
 
-RUN apt-get update -y && \
-    apt-get install -y python-pip
+RUN apt-get update -y
 
 # We copy just the requirements.txt first to leverage Docker cache
 COPY ./requirements.txt /app/requirements.txt
