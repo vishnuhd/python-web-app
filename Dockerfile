@@ -1,6 +1,6 @@
 FROM ubuntu
 
-MAINTANER Vishnu "https://github.com/vishnuhd/"
+MAINTAINER Vishnu "https://github.com/vishnuhd/"
 
 RUN apt-get update -y && \
     apt-get install -y python-pip python-dev
